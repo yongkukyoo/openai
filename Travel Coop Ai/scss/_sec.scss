@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+//브로그//
+
+#sec2 {
+    min-width: 1170px;
+    height: auto;
+    position: relative;
+    padding: 30px 0;
+    background-color: #dcdcdc;
+    
+    .blog {
+        width: 1170px;
+        margin: 0 auto;
+
+        .blogtitle {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 0;
+
+            a {
+                color: coral;
+            }
+        }
+       .insert-img{
+        width: 1170px;
+        height: auto;
+        margin: 0 auto;
+               
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 0;
+           
+           #image-container {
+            width: 48%;
+            margin: 10px 0;
+            height: 290px;
+            border: 1px solid #ffffff;
+            }
+            
+            #caption {
+            font-size: 16px;
+            width: 48%;
+            margin: 10px 0;
+            height: 290px;
+            border: 1px solid #ffffff;
+            }
+        }
+
+    }
+}
+
+#sec3 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 30px 0;
+
+    .jinbutu {
+        width: 1170px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .mySlides {
+        display: block;
+        width: 100%;
+        height: 260px;
+
+        img {
+            position: absolute;
+            top: 8%;
+            left: 45%;
+            vertical-align: middle;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+        color: #000000;
+        font-size: 16px;
+        padding: 8px 12px;
+        position: absolute;
+        margin-top: 140px;
+        width: 100%;
+        text-align: center;
+        
+        span{
+            color: coral;
+        }
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: coral;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 16px
+        }
+    }
+   }

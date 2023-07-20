@@ -1,0 +1,529 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prata", serif;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+#wrap {
+  width: 100%;
+  height: auto;
+}
+
+/*헤더*/
+.main-header {
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  font-family: "Prata", serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.main-header .top-header {
+  opacity: 0.8;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  margin: 0;
+}
+.main-header .top-header .top-header-bar {
+  width: 1170px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 4px;
+  font-size: 13px;
+  margin: 0 auto;
+}
+.main-header .top-header .top-header-bar .top-header-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 50%;
+  height: auto;
+}
+.main-header .top-header .top-header-bar .top-header-left div {
+  width: 38%;
+}
+.main-header .top-header .top-header-bar .top-header-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 50%;
+  height: auto;
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-1 {
+  width: 18%;
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-1 img:hover {
+  transform: scale(1.1);
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-1 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 1px 0 0 0;
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-2 {
+  width: 4px;
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-2 span {
+  text-align: center;
+  padding: 0 0 0 14px;
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-3 {
+  width: 30%;
+  text-align: right;
+  margin: 0;
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-3 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin: 0;
+  color: coral;
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-3 ul .login1 {
+  width: 4%;
+  padding: 1px 0 0 0;
+  cursor: pointer;
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-3 ul .login1:hover {
+  transform: scale(1.1);
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-3 ul .login2 {
+  width: 80%;
+  cursor: pointer;
+}
+.main-header .top-header .top-header-bar .top-header-right .top-header-right-3 ul .login2:hover {
+  color: red;
+}
+.main-header .low-header {
+  opacity: 0.8;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  background-color: white;
+  box-shadow: 0px 0px 0px transparent;
+}
+.main-header .low-header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  height: auto;
+  margin: 0 auto;
+}
+.main-header .low-header nav .logo {
+  width: auto;
+  font-size: 20px;
+  text-align: center;
+  line-height: 22px;
+  padding: 22px 0 0 0;
+  text-shadow: 0px 2px 2px #ddd;
+}
+.main-header .low-header nav .logo:hover {
+  text-shadow: 0px 3px 3px #ddd;
+}
+.main-header .low-header nav .logo:hover h1 {
+  color: red;
+}
+.main-header .low-header nav .logo:hover span {
+  color: red;
+}
+.main-header .low-header nav .logo h1 {
+  color: coral;
+}
+.main-header .low-header nav .logo span {
+  font-size: 12px;
+}
+.main-header .low-header nav .nav-bar .menu {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.main-header .low-header nav .nav-bar .menu :hover {
+  color: coral;
+}
+.main-header .low-header nav .nav-bar .menu li {
+  margin: 10px 0 0 22px;
+}
+.main-header .low-header nav .nav-bar .menu li img:hover {
+  transform: scale(1.1);
+}
+.main-header .low-header nav .nav-bar .menu li .sub {
+  width: auto;
+  position: absolute;
+  top: 78%;
+  display: none;
+}
+.main-header .low-header nav .nav-bar .menu li .sub li {
+  margin: 0;
+  width: 100%;
+  line-height: 1.5;
+  background-color: #dcdcdc;
+  opacity: 0.6;
+  padding: 0 6px;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+}
+.main-header .low-header nav .nav-bar .menu li .sub li :hover {
+  color: white;
+  opacity: 1;
+  background-color: coral;
+}
+.main-header .low-header nav .nav-bar .menu li .sub li a {
+  color: red;
+}
+.main-header .low-header nav .nav-bar .menu input:focus {
+  outline: 1px solid #d50000;
+}
+.main-header .low-header nav .nav-bar .menu input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: block;
+  padding: 4px 0;
+  text-align: center;
+}
+.main-header .low-header nav .nav-bar .menu input:hover {
+  border: 1px solid red;
+}
+
+/*푸터*/
+footer {
+  position: absolute;
+  min-width: 100%;
+  height: 250px;
+  margin: 0;
+  padding: 0 0 6px 0;
+  background-color: #434343;
+  font-family: "Prata", serif;
+}
+footer a {
+  color: white;
+}
+footer .footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  color: white;
+  width: 1170px;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px 0 0 0;
+}
+footer .footer-nav .footer-address {
+  width: 30%;
+  font-size: 20px;
+  text-align: left;
+  line-height: 26px;
+}
+footer .footer-nav .footer-address :hover a {
+  color: white;
+}
+footer .footer-nav .footer-address a {
+  text-decoration: none;
+  color: coral;
+}
+footer .footer-nav .footer-menu {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footer-nav .footer-menu ul {
+  font-size: 20px;
+}
+footer .footer-nav .footer-menu ul :hover a {
+  color: coral;
+}
+footer .footer-nav .footer-menu ul .card {
+  margin: 10px auto;
+}
+footer .footer-nav .footer-menu ul .card img {
+  box-shadow: 2px 2px 4px #434343;
+}
+footer .footer-nav .footer-menu ul .card img:hover {
+  box-shadow: 1px 1px 2px #fee0e0;
+}
+footer .sen {
+  width: 1170px;
+  margin: 0 auto;
+}
+footer .sen p {
+  color: white;
+  margin: 20px auto;
+  color: white;
+  text-align: right;
+}
+
+/*탑 슬라이드*/
+#topslide {
+  height: auto;
+}
+
+#up {
+  z-index: 200;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 80px;
+  height: 80px;
+  transition: all 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#up.on {
+  opacity: 1;
+  visibility: visible;
+}
+
+#up a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  z-index: 100;
+}
+
+/*GLOBALS*/
+#wrapper {
+  min-width: 1170px;
+  margin: 0 auto;
+  height: 500px;
+  position: relative;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 0px;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.mySlideDiv {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.mySlideDiv img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mySlideDiv .sltext {
+  position: absolute;
+  top: 330px;
+  left: 100px;
+}
+.mySlideDiv .sltext h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.mySlideDiv .sltext span {
+  text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/* Next & previous buttons */
+.btns {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  top: 60%;
+  margin-top: -25px;
+  line-height: 57px;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  color: white;
+  transition: all 0.1s ease;
+}
+.btns:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#next {
+  right: 0px;
+}
+
+#previous {
+  left: 0px;
+}
+
+/* effect */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#sec2 {
+  min-width: 1170px;
+  height: auto;
+  position: relative;
+  padding: 30px 0;
+  background-color: #dcdcdc;
+}
+#sec2 .blog {
+  width: 1170px;
+  margin: 0 auto;
+}
+#sec2 .blog .blogtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+#sec2 .blog .blogtitle a {
+  color: coral;
+}
+#sec2 .blog .insert-img {
+  width: 1170px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+#sec2 .blog .insert-img #image-container {
+  width: 48%;
+  margin: 10px 0;
+  height: 290px;
+  border: 1px solid #ffffff;
+}
+#sec2 .blog .insert-img #caption {
+  font-size: 16px;
+  width: 48%;
+  margin: 10px 0;
+  height: 290px;
+  border: 1px solid #ffffff;
+}
+
+#sec3 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 30px 0;
+  /* Slideshow container */
+  /* Caption text */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+  /* On smaller screens, decrease text size */
+}
+#sec3 .jinbutu {
+  width: 1170px;
+  height: auto;
+  margin: 0 auto;
+}
+#sec3 * {
+  box-sizing: border-box;
+}
+#sec3 .mySlides {
+  display: block;
+  width: 100%;
+  height: 260px;
+}
+#sec3 .mySlides img {
+  position: absolute;
+  top: 8%;
+  left: 45%;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#sec3 .slideshow-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+#sec3 .text {
+  color: #000000;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  margin-top: 140px;
+  width: 100%;
+  text-align: center;
+}
+#sec3 .text span {
+  color: coral;
+}
+#sec3 .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#sec3 .active {
+  background-color: coral;
+}
+#sec3 .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #sec3 .text {
+    font-size: 16px;
+  }
+}
