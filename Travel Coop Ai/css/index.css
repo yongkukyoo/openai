@@ -433,14 +433,14 @@ footer .sen p {
 }
 #sec2 .blog .insert-img #image-container {
   width: 48%;
-  margin: 10px 0;
+  margin: 10px 10px;
   height: 290px;
   border: 1px solid #ffffff;
 }
 #sec2 .blog .insert-img #caption {
   font-size: 16px;
   width: 48%;
-  margin: 10px 0;
+  margin: 10px 10px;
   height: 290px;
   border: 1px solid #ffffff;
 }
